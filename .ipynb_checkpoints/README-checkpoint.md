@@ -1,6 +1,6 @@
 # ODATQA-MDC
 
-This repository contains resources and datasets for the ODATQA-MDC project, designed for machine reading comprehension and question answering in technical domains.
+This repository contains resources and datasets for the ODATQA-MDC project, designed for Open-Domain Ambiguous Tabular QA.
 
 ## Directory Structure
 
