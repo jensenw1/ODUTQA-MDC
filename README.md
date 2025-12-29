@@ -1,6 +1,6 @@
-# ODATQA-MDC
+# ODUTQA-MDC
 
-This repository contains resources and datasets for the **ODATQA-MDC** project, designed for **Open-Domain Ambiguous Tabular Question Answering**.
+This repository contains resources and datasets for the **ODUTQA-MDC** project, designed for **Open-Domain Underspecification-aware Tabular Question Answering**.
 
 To facilitate the reproducibility of our experiments in **MAIC-TQA**, we provide a unified launch script that initializes all modules. This script is located in the `scripts` directory. Before running the script, please make sure to follow the steps in the [Getting Started](#getting-started) section to set up the required environment.
 
@@ -47,11 +47,11 @@ If you have any questions about this project, feel free to open an issue (after 
 All Python dependencies are listed in `requirements.txt`. Please ensure you have **Conda** installed, and then run the following commands to create a virtual environment and install the necessary packages:
 
 ```bash
-# Create a conda environment named 'odatqa'
-conda create -n odatqa python==3.10.0
+# Create a conda environment named 'odutqa'
+conda create -n odutqa python==3.10.0
 
 # Activate the environment
-conda activate odatqa
+conda activate odutqa
 
 # Install required packages
 pip install -r requirements.txt
@@ -68,8 +68,8 @@ docker run -id \
   --name=re-postgres \
   -v ./data:/var/lib/postgresql/data \
   -p 25432:5432 \
-  -e POSTGRES_PASSWORD='odatqa123456' \
-  -e POSTGRES_USER='odatqa' \
+  -e POSTGRES_PASSWORD='odutqa123456' \
+  -e POSTGRES_USER='odutqa' \
   -e LANG=C.UTF-8 \
   --restart=always \
   postgres:alpine
